@@ -3,11 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daniel S. Ocampo, Ph.D. Candidate</title>
+<title>Daniel S. Ocampo, PhD</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
+  .institution-logos {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+
+  .institution-logos img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(20%);
+    transition: filter 0.2s;
+  }
+
+  .institution-logos img:hover {
+    filter: grayscale(0%);
+  }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
@@ -477,7 +496,7 @@
   <div class="sidebar-logo">
     <a href="#home">
       Daniel S. Ocampo
-      <span>Ph.D. Candidate</span>
+      <span>PhD</span>
     </a>
   </div>
   <nav>
@@ -500,10 +519,15 @@
     <div class="home-top">
       <div class="home-photo">
         <img src="profile.jpg" alt="Daniel S. Ocampo">
+        <div class="institution-logos">
+          <img src="logos/1_Logo_EAFIT.svg" alt="Universidad EAFIT">
+          <img src="logos/2_UTSA-Roadrunners-Logo-2008-246675660.png" alt="UT San Antonio">
+          <img src="logos/3_sec-logo-png-8-3711615577.jpg" alt="Texas A&M University">
+        </div>
       </div>
       <div class="home-intro">
         <h1>Hello!</h1>
-        <p class="tagline">Ph.D. Candidate in Mechanical Engineering · Texas A&amp;M University · Spring 2026</p>
+        <p class="tagline">PhD Mechanical Engineering · Texas A&amp;M University · Spring 2026</p>
         <div class="home-bio">
           <p>
             My name is Daniel Ocampo and I am a Mechanical Engineer and recent PhD graduate from the
@@ -529,7 +553,7 @@
           </p>
           <p>
             I have been funded by the
-            <a href="https://www.faa.gov/" target="_blank">FAA</a>
+            <a href="https://www.faa.gov/" target="_blank">Federal Aviation Administration (FAA)</a>
             and the
             <a href="https://www.nsf.gov/" target="_blank">National Science Foundation (NSF)</a>.
           </p>
