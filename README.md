@@ -1,2 +1,13 @@
-# personal_website
-Daniel S. Ocampo, PhD — ML scientist and computational engineer specializing in physics-based surrogate modeling, machine learning, and multiscale simulation.
+
+# Daniel S. Ocampo — Personal Website
+
+Source code for my personal academic website, hosted at [docampomill.github.io](https://docampomill.github.io).
+
+## About
+
+This site showcases my research, publications, and experience in computational materials science,
+physics-based machine learning, software and reduced-order modeling.
+
+## Contact
+
+daniel.ocampo18@gmail.com
