@@ -1,7 +1,7 @@
 
 # Daniel S. Ocampo — Personal Website
 
-Source code for my personal academic website, hosted at [docampomill.github.io](https://docampomill.github.io).
+Source code for my personal academic website, hosted at [docampomill.github.io](https://docampomill.github.io/personal_website/).
 
 ## About
 
