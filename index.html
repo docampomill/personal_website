@@ -8,6 +8,33 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
+    .photo-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+  }
+
+  .institution-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .institution-logos img {
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(20%);
+    transition: filter 0.2s;
+  }
+
+  .institution-logos img:hover {
+    filter: grayscale(0%);
+  }
   .institution-logos {
     display: flex;
     align-items: center;
@@ -517,13 +544,15 @@
   <!-- HOME -->
   <section id="home" class="page-section">
     <div class="home-top">
-      <div class="home-photo">
-        <img src="profile.jpg" alt="Daniel S. Ocampo">
-      </div>
-      <div class="institution-logos">
-        <img src="logos/eafit.svg" alt="Universidad EAFIT">
-        <img src="logos/utsa.png" alt="UT San Antonio">
-        <img src="logos/tamu.jpg" alt="Texas A&M University">
+      <div class="photo-col">
+        <div class="home-photo">
+          <img src="DSC6563-2.jpg" alt="Daniel S. Ocampo">
+        </div>
+        <div class="institution-logos">
+          <img src="eafit.svg" alt="Universidad EAFIT">
+          <img src="utsa.png" alt="UT San Antonio">
+          <img src="tamu.jpg" alt="Texas A&M University">
+        </div>
       </div>
       <div class="home-intro">
         <h1>Hello!</h1>
