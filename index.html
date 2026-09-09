@@ -22,6 +22,7 @@
     justify-content: center;
     gap: 14px;
     flex-wrap: wrap;
+    max-width: 340px;
   }
 
   .institution-logos img {
@@ -41,6 +42,7 @@
     gap: 16px;
     margin-top: 12px;
     flex-wrap: wrap;
+    max-width: 340px;
   }
 
   .institution-logos img {
@@ -54,6 +56,10 @@
   .institution-logos img:hover {
     filter: grayscale(0%);
   }
+
+  .institution-logos img[src="logos/subsense.png"] { height: 26px; }
+  .institution-logos img[src="logos/wingman.png"] { height: 56px; }
+
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
@@ -530,8 +536,8 @@
     <ul>
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#research">Research Experience</a></li>
+      <li><a href="#experience">Work Experience</a></li>
       <li><a href="#publications">Publications</a></li>
-      <li><a href="#experience">Experience</a></li>
       <li><a href="#awards">Awards</a></li>
       <li><a href="#contact">Contact &amp; CV</a></li>
     </ul>
@@ -552,6 +558,9 @@
           <img src="logos/eafit.svg" alt="Universidad EAFIT">
           <img src="logos/utsa.png" alt="UT San Antonio">
           <img src="logos/tamu.png" alt="Texas A&M University">
+          <img src="logos/slb.png" alt="SLB (Schlumberger)">
+          <img src="logos/wingman.png" alt="Wingman for Recovery">
+          <img src="logos/subsense.png" alt="Subsense">
         </div>
       </div>
       <div class="home-intro">
@@ -621,7 +630,7 @@
     </div>
 
     <div class="email-bar">
-      <strong>Looking to connect?</strong> Shoot me an email at <a href="mailto:daniel.ocampo@tamu.edu">daniel.ocampo@tamu.edu</a>
+      <strong>Looking to connect?</strong> Shoot me an email at <a href="mailto:daniel.ocampo18@gmail.com">daniel.ocampo18@gmail.com</a>
     </div>
   </section>
 
@@ -631,10 +640,20 @@
     <div class="sec-bar"></div>
 
     <div class="proj">
+      <span class="badge b-ind">Industry · Addiction Resources Systems Inc.</span>
+      <h3>Agentic LLM &amp; RAG systems — Wingman for Recovery</h3>
+      <p>As AI and Data Science Postdoctoral Advisor at Addiction Resources Systems Inc., I design agentic LLM workflows that decompose multi-step objectives, orchestrate tool use, and track progress against user-specific goals. I also build retrieval-augmented generation (RAG) systems that ground large language models in proprietary domain databases.</p>
+      <div class="tags">
+        <span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Agentic workflows</span>
+        <span class="tag">Uncertainty quantification</span><span class="tag">Python</span>
+      </div>
+    </div>
+
+    <div class="proj">
       <span class="badge b-oss">Open Source · GitHub</span>
       <h3>AtomDNN — ML framework for atomistic simulations</h3>
       <p class="proj-result">Open-source · containerized with Docker &amp; Singularity · interfaced to LAMMPS</p>
-      <p>I am the author of AtomDNN, an open-source Python framework for training machine learning interatomic potentials (MLIPs) from density functional theory (DFT) data. The framework uses a modular architecture, automated testing, and reproducible workflows, and is directly interfaced to LAMMPS for large-scale molecular dynamics. It includes an adaptive loss-weighting algorithm to automatically balance competing objectives — energy, force, and stress prediction — in multi-component training.</p>
+      <p>I am the author of AtomDNN, an open-source Python framework for training machine learning interatomic potentials (MLIPs) from density functional theory (DFT) data. The framework is directly interfaced to LAMMPS for large-scale molecular dynamics. It includes an adaptive loss-weighting algorithm to automatically balance energy, force, and stress contributions to the calculation of the loss during training.</p>
       <div class="tags">
         <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span>
         <span class="tag">Docker</span><span class="tag">Singularity</span><span class="tag">LAMMPS</span>
@@ -645,8 +664,8 @@
     <div class="proj">
       <span class="badge b-ind">Industry · SLB Internship</span>
       <h3>Structural dynamics surrogate pipeline — 30,000× speedup</h3>
-      <p class="proj-result">★ 30,000× runtime acceleration — finite element hours → milliseconds</p>
-      <p>During my Ph.D. internship at SLB (Schlumberger), I designed and deployed a full-stack surrogate modeling pipeline for real-time structural health monitoring of drilling components. The pipeline integrates automated Abaqus data extraction, proper orthogonal decomposition (POD) for dimensionality reduction, Gaussian Process Regression as the surrogate layer, and linear state-space models for time-domain reconstruction — reducing FEA runtimes from hours to milliseconds.</p>
+      <p class="proj-result">★ Reduced-order models with 30,000× runtime acceleration of FEM calculations</p>
+      <p>During my Ph.D. internship at SLB (Schlumberger), I designed and deployed a full-stack surrogate modeling pipeline for real-time structural health monitoring of drilling components. The pipeline integrates automated Abaqus data extraction, proper orthogonal decomposition (POD) for dimensionality reduction, Gaussian Process Regression as the surrogate layer, and linear state-space models for time-domain reconstruction. We reduced FEA runtimes from hours to milliseconds.</p>
       <div class="tags">
         <span class="tag">POD</span><span class="tag">GPR</span><span class="tag">State-space models</span>
         <span class="tag">Abaqus</span><span class="tag">Python</span>
@@ -654,9 +673,9 @@
     </div>
 
     <div class="proj">
-      <span class="badge b-prep">In preparation · npj Computational Materials</span>
-      <h3>Fracture mechanics in 2D high-entropy VTiCrMoC₃ MXenes</h3>
-      <p>I discovered the first-reported ductility and toughening mechanisms in 2D high-entropy VTiCrMoC₃ MXenes by combining MLIP-driven fracture simulations with statistical analysis of atomistic trajectories. Machine learning interatomic potentials trained on DFT data enable physics-accurate molecular dynamics at scales inaccessible to ab initio methods — spanning atomic to mesoscale.</p>
+      <span class="badge b-prep">In preparation · International Journal of Mechanical Sciences</span>
+      <h3>Vacancy dependent mechanical behavior of high-entropy MXenes</h3>
+      <p>We discovered the first-reported ductility and toughening mechanisms in 2D high-entropy VTiCrMoC₃ MXenes using MLIP-driven fracture simulations.</p>
       <div class="tags">
         <span class="tag">MLIPs</span><span class="tag">Molecular dynamics</span><span class="tag">MXenes</span>
         <span class="tag">DFT</span><span class="tag">Fracture mechanics</span>
@@ -664,9 +683,18 @@
     </div>
 
     <div class="proj">
+      <span class="badge b-prep">Under review · Communications Materials</span>
+      <h3>3D nanotwinned carbide nanocomposites from 2D compositionally complex MXene</h3>
+      <p>Co-developed the study on 3D nanotwinned carbide nanocomposites synthesized from 2D compositionally complex MXene via interlayer fusion. I contributed to the atomistic modeling and analysis for this work.</p>
+      <div class="tags">
+        <span class="tag">MXenes</span><span class="tag">Nanocomposites</span><span class="tag">MLIPs</span>
+      </div>
+    </div>
+
+    <div class="proj">
       <span class="badge b-pub">Published · Communications Materials 2026</span>
       <h3>Reversible phase transitions in monolayer MoTe₂</h3>
-      <p>Using ML-accelerated multiscale simulations, I identified the kinetic mechanism for reversible stress-induced phase transitions in monolayer MoTe₂, focusing on the vacancy-assisted mechanism enabling this reversibility. Supported by NSF grant 2308163 and published in Communications Materials (2026).</p>
+      <p>Using ML-accelerated multiscale simulations, we resolved the defect-mediated mechanism behind reversible stress-induced phase transitions in monolayer MoTe₂, combining nudged elastic band (NEB) calculations in DFT with MLIP-accelerated simulations to map minimum-energy pathways and vacancy-assisted transition barriers. Supported by NSF grant 2308163 and published in Communications Materials (2026).</p>
       <div class="tags">
         <span class="tag">MLIPs</span><span class="tag">Phase transitions</span><span class="tag">MoTe₂</span><span class="tag">NSF-funded</span>
       </div>
@@ -685,6 +713,137 @@
 
   </section>
 
+  <!-- EXPERIENCE -->
+  <section id="experience" class="page-section">
+    <h2 class="sec-title">Work Experience</h2>
+    <div class="sec-bar"></div>
+
+    <div class="exp">
+      <div class="exp-left">
+        <strong>Subsense Inc.</strong>
+        Palo Alto, CA<br>Jul 2026 – Present
+      </div>
+      <div>
+        <span class="exp-hl">Magnetoelectric nanoparticles · BCI</span>
+        <div class="exp-role">Computational Materials Scientist — Contract</div>
+        <ul class="bullets">
+          <li>Support Subsense's AI Group in the computational design and screening of magnetoelectric nanoparticles for brain–computer interface applications.</li>
+          <li>Use computational modeling and AI/ML tools to evaluate and optimize candidate materials.</li>
+          <li>Support nanoparticle design, simulation workflows, and data analysis to guide experimental development.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-left">
+        <strong>Addiction Resources Systems Inc. — Wingman for Recovery</strong>
+        Remote<br>Jun 2026 – Present
+      </div>
+      <div>
+        <span class="exp-hl">Agentic AI · RAG systems</span>
+        <div class="exp-role">AI and Data Science Postdoctoral Advisor</div>
+        <ul class="bullets">
+          <li>Designed agentic LLM workflows that decompose multi-step objectives, orchestrate tool use, and track progress against user-specific goals.</li>
+          <li>Built retrieval-augmented generation (RAG) systems grounding LLMs in proprietary domain databases and user-specific histories to generate personalized curricula.</li>
+          <li>Developed behavioral prediction models and outcome measurement frameworks, applying statistical validation and uncertainty-aware evaluation to noisy longitudinal data.</li>
+          <li>Reviewed technical proposals and advised on research methodology, supporting collaborations with academic, healthcare, and technology partners.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-left">
+        <strong>SLB (Schlumberger)</strong>
+        Houston, TX<br>May 2025 – Mar 2026
+      </div>
+      <div>
+        <span class="exp-hl">30,000× runtime speedup</span>
+        <div class="exp-role">Ph.D. Student Intern — Modeling and Simulations Team</div>
+        <ul class="bullets">
+          <li>Accelerated structural dynamics FEA calculations by 30,000× using reduced-order models with POD, state-space models, and data-driven physics methods.</li>
+          <li>Deployed computational models in sensors for real-time health monitoring of drilling components.</li>
+          <li>Built a full-stack surrogate pipeline: automated Abaqus extraction, POD dimensionality reduction, GPR surrogate layer, and linear state-space reconstruction.</li>
+          <li>Designed modular Python codebase following software engineering best practices with version-controlled repository and full-fidelity benchmarks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-left">
+        <strong>Texas A&amp;M University</strong>
+        College Station, TX<br>Jan 2021 – Feb 2026
+      </div>
+      <div>
+        <div class="exp-role">Graduate Research Assistant — Multiscale Mechanics of Materials Laboratory</div>
+        <ul class="bullets">
+          <li>Developed MLIPs trained on DFT data for physics-based, ML-accelerated molecular dynamics.</li>
+          <li>Discovered first-reported ductility and toughening mechanisms in 2D high-entropy VTiCrMoC₃ MXenes (manuscript in progress).</li>
+          <li>Resolved the defect-mediated mechanism behind reversible phase transitions in monolayer MoTe₂, combining NEB calculations in DFT with MLIP-accelerated simulations to map minimum-energy pathways and vacancy-assisted transition barriers (Communications Materials, 2026, NSF grant 2308163).</li>
+          <li>Authored AtomDNN: open-source containerized Python framework for MLIP training, interfaced to LAMMPS.</li>
+          <li>Invented adaptive loss-weighting algorithm for MLIP training (Computational Materials Science, 2024).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-left">
+        <strong>Texas A&amp;M University</strong>
+        College Station, TX<br>Aug 2022 – May 2025
+      </div>
+      <div>
+        <div class="exp-role">Graduate Teaching Assistant — Department of Mechanical Engineering</div>
+        <ul class="bullets">
+          <li>Solid Mechanics for Mechanical Design — weekly lectures, recitations, and grading.</li>
+          <li>Machine Learning for Mechanical Engineers — lecturing and individual student conferencing.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-left">
+        <strong>UT San Antonio</strong>
+        San Antonio, TX<br>Jan 2019 – Jun 2020
+      </div>
+      <div>
+        <span class="exp-hl">FAA grant · $1.08M</span>
+        <div class="exp-role">Graduate Research Assistant — Computational Reliability Laboratory</div>
+        <ul class="bullets">
+          <li>Co-developed Smart|DT, FAA-funded risk assessment software for aircraft probabilistic damage tolerance analysis.</li>
+          <li>Contributed Java-based GUI and FORM/SORM acceleration of probability-of-failure calculations.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-left">
+        <strong>UT San Antonio</strong>
+        San Antonio, TX<br>Jan 2019 – Jun 2020
+      </div>
+      <div>
+        <div class="exp-role">Graduate Teaching Assistant — Department of Mechanical Engineering</div>
+        <ul class="bullets">
+          <li>Materials Engineering Laboratory — weekly lectures and recitations, grading, and evaluating.</li>
+          <li>Conducted experiments (tensile tests, heat treatments, hardness testing) and analyzed results.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-left">
+        <strong>Universidad EAFIT</strong>
+        Medellín, Colombia<br>Jan 2016 – Dec 2016
+      </div>
+      <div>
+        <div class="exp-role">Research Assistant — Department of Mechanical Engineering</div>
+        <ul class="bullets">
+          <li>Developed code for bone-based material characterization via AFM nanoindentation.</li>
+          <li>Built 3D finite element models for multiscale mechanical property extraction.</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
   <!-- PUBLICATIONS -->
   <section id="publications" class="page-section">
     <h2 class="sec-title">Publications</h2>
@@ -695,10 +854,10 @@
       <li class="pub-item">
         <span class="pub-n">[1]</span>
         <div>
-          <span class="badge b-prep">Under preparation</span>
-          <div class="pub-t">Modeling fracture in 2D high entropy VTiCrMoC₃ MXenes using machine learning potentials</div>
-          <div class="pub-a"><strong>D. Ocampo</strong>, R. Namakian, C. Wu, F. Shuang, W. Gao</div>
-          <div class="pub-v">npj Computational Materials</div>
+          <span class="badge b-prep">Under review</span>
+          <div class="pub-t">3D Nanotwinned Carbide Nanocomposites from 2D Compositionally Complex MXene via Interlayer Fusion</div>
+          <div class="pub-a">R. Namakian, <strong>D. Ocampo</strong>, J. Dai, C. Wu, F. Shuang, W. Gao</div>
+          <div class="pub-v">Communications Materials</div>
         </div>
       </li>
 
@@ -746,90 +905,6 @@
       </li>
 
     </ul>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="page-section">
-    <h2 class="sec-title">Experience</h2>
-    <div class="sec-bar"></div>
-
-    <div class="exp">
-      <div class="exp-left">
-        <strong>SLB (Schlumberger)</strong>
-        Houston, TX<br>May 2025 – Mar 2026
-      </div>
-      <div>
-        <span class="exp-hl">30,000× runtime speedup</span>
-        <div class="exp-role">Ph.D. Student Intern — Modeling and Simulations Team</div>
-        <ul class="bullets">
-          <li>Accelerated structural dynamics FEA calculations by 30,000× using reduced-order models with POD, state-space models, and data-driven physics methods.</li>
-          <li>Deployed computational models in sensors for real-time health monitoring of drilling components.</li>
-          <li>Built a full-stack surrogate pipeline: automated Abaqus extraction, POD dimensionality reduction, GPR surrogate layer, and linear state-space reconstruction.</li>
-          <li>Designed modular Python codebase following software engineering best practices with version-controlled repository and full-fidelity benchmarks.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="exp">
-      <div class="exp-left">
-        <strong>Texas A&amp;M University</strong>
-        College Station, TX<br>Jan 2021 – Feb 2026
-      </div>
-      <div>
-        <div class="exp-role">Graduate Research Assistant — Multiscale Mechanics of Materials Laboratory</div>
-        <ul class="bullets">
-          <li>Developed MLIPs trained on DFT data for physics-based, ML-accelerated molecular dynamics.</li>
-          <li>Discovered first-reported ductility and toughening mechanisms in 2D high-entropy VTiCrMoC₃ MXenes (npj Computational Materials, under review).</li>
-          <li>Identified kinetic mechanism for reversible phase transitions in monolayer MoTe₂ (Communications Materials, 2026, NSF grant 2308163).</li>
-          <li>Authored AtomDNN: open-source containerized Python framework for MLIP training, interfaced to LAMMPS.</li>
-          <li>Invented adaptive loss-weighting algorithm for MLIP training (Computational Materials Science, 2024).</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="exp">
-      <div class="exp-left">
-        <strong>Texas A&amp;M University</strong>
-        College Station, TX<br>Aug 2022 – May 2025
-      </div>
-      <div>
-        <div class="exp-role">Graduate Teaching Assistant — Department of Mechanical Engineering</div>
-        <ul class="bullets">
-          <li>Solid Mechanics for Mechanical Design — weekly lectures, recitations, and grading.</li>
-          <li>Machine Learning for Mechanical Engineers — lecturing and individual student conferencing.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="exp">
-      <div class="exp-left">
-        <strong>UT San Antonio</strong>
-        San Antonio, TX<br>Jan 2019 – Jun 2020
-      </div>
-      <div>
-        <span class="exp-hl">FAA grant · $1.08M</span>
-        <div class="exp-role">Graduate Research Assistant — Computational Reliability Laboratory</div>
-        <ul class="bullets">
-          <li>Co-developed Smart|DT, FAA-funded risk assessment software for aircraft probabilistic damage tolerance analysis.</li>
-          <li>Contributed Java-based GUI and FORM/SORM acceleration of probability-of-failure calculations.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="exp">
-      <div class="exp-left">
-        <strong>Universidad EAFIT</strong>
-        Medellín, Colombia<br>Jan 2016 – Dec 2016
-      </div>
-      <div>
-        <div class="exp-role">Research Assistant — Department of Mechanical Engineering</div>
-        <ul class="bullets">
-          <li>Developed code for bone-based material characterization via AFM nanoindentation.</li>
-          <li>Built 3D finite element models for multiscale mechanical property extraction.</li>
-        </ul>
-      </div>
-    </div>
-
   </section>
 
   <!-- AWARDS -->
